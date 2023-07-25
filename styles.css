@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Estilos Titulo-Banner*/
+.banner {
+    background-image: url(./img/banner5.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #00425A;
+    padding: 5px 10%;
+    width: 100%;
+}
+
+.banner h1 {
+    background-color: rgba(173, 170, 167, 0.6);
+    width: 125%;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Estilos Quienes Somos*/
+
+.quienesSomos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#info {
+    padding-top: 90px;
+    padding-left: 20px;
+    /*background: linear-gradient(0.25turn,#FC7300 , #ebf8e1);*/
+}
+
+
+/*Estilos Por que elegirnos*/
+
+.porqueElegirnos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#infoDos {
+    padding-top: 90px;
+    padding-left: 20px;
+    /*background: linear-gradient(0.25turn, #ebf8e1, #FC7300  );*/
+}
+
+.propuestaEducativa {
+    padding: 50px 40px;
+}
+
+#galeriaPropuestas {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.propuestaEducativa h2 {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.propuestaEducativa img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transition: transform 0.2s ease;
+}
+
+.propuestaEducativa img:hover {
+    transform: scale(1.1);
+}
+
+.piePagina {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+#redesSociales{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+ion-icon{
+    color: black;
+    font-size: 2rem;
+}
