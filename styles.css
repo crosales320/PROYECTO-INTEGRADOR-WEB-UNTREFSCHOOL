@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:wght@100;200;300;400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: #1F8A70;
+    color: #EFF5F5;
+    font-family: 'Belanosima', sans-serif;
+}
+#inicio {
+    position: fixed;
+    background-color:#1F8A70;
+    width: 100%;
+}
 
 /*Estilos Titulo-Banner*/
 .banner {
     background-image: url(./img/banner5.jpg);
-    height: 500px;
+    height: 700px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -33,11 +46,17 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 20px 30px;
     text-align: center;
+    height: 700px;
+}
+
+.quienesSomos #imagen {
+    height: 600px;
+    padding-left: 20px;
 }
 
 #info {
     padding-top: 90px;
-    padding-left: 20px;
+    padding-left: 10px;
     /*background: linear-gradient(0.25turn,#FC7300 , #ebf8e1);*/
 }
 
@@ -49,6 +68,11 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 20px 30px;
     text-align: center;
+    height: 700px;
+}
+
+.porqueElegirnos #imagen {
+    height: 600px;
 }
 
 #infoDos {
@@ -57,8 +81,11 @@
     /*background: linear-gradient(0.25turn, #ebf8e1, #FC7300  );*/
 }
 
+/*Estilos Propuestas Educativas*/
+
 .propuestaEducativa {
-    padding: 50px 40px;
+    padding: 100px 40px;
+    height: 600px;
 }
 
 #galeriaPropuestas {
@@ -68,7 +95,12 @@
 
 .propuestaEducativa h2 {
     text-align: center;
-    padding: 20px 30px;
+    padding: 50px 30px;
+}
+
+.propuestaEducativa h5 {
+    text-align: center;
+
 }
 
 .propuestaEducativa img {
@@ -76,26 +108,125 @@
     height: 200px;
     border-radius: 100px;
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .propuestaEducativa img:hover {
     transform: scale(1.1);
 }
 
+
+/*Estilos Ultimas noticias*/
+.ultimasNoticias {
+    padding: 30px;
+    height: 700px;
+}
+
+.ultimasNoticias h2 {
+    text-align: center;
+    padding: 20px;
+}
+.cardUltimas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 50px;
+}
+
+/*Estilos Pie de Pagina*/
+
 .piePagina {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    grid-template-columns: 1fr 4fr 1fr 0.5fr;
     justify-items: center;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: #1F8A70;
+    color: #00425A;
 }
-#redesSociales{
+
+#redesSociales {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    list-style: none;
 }
-ion-icon{
-    color: black;
+
+ion-icon {
+    color: #00425A;
     font-size: 2rem;
 }
+
+
+
+/*Estilos Contacto*/
+
+.body-contacto {
+    background-color: #FC7300;
+}
+
+.form {
+    width: 40%;
+    min-width: 300px;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: rgba(173, 170, 167, 0.6);
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+h1 {
+    color: #fff;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.fomr__imput {
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2756c265;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.fomr__text {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2755c2;
+}
+
+.fomr__text::placeholder {
+    font-size: 1.4rem;
+}
+
+.form__label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.enviar {
+    width: 50%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: none;
+    border: none;
+    background:  #00425A;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+
+
